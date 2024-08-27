@@ -1,0 +1,58 @@
+.login{
+        margin: auto;
+        padding: 35px;
+        height: 80vh;
+        background-color: rgb(43, 82, 73);
+        margin-bottom: 10px;
+}
+.login-container{
+        background-color: white;
+        padding: 25px;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px auto;
+        width: 600px;
+        justify-content: center;
+}
+.login-container h1{
+        padding: 0px auto;
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 400;
+}
+.loginfield{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.loginfield input {
+    padding: 22px;
+    font-size: 17px;
+    font-weight: 300;
+    width: 400px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    border: 2px solid rgb(209, 209, 209);
+}
+.loginfield span{
+    padding: 22px;
+    font-size: 17px;
+    font-weight: 300;
+    width: 20px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    border: 2px solid rgb(209, 209, 209);
+}
+.other{
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+}
+span{
+    font-size: 18px;
+    font-weight: 400;
+}

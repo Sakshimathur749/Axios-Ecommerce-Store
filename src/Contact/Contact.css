@@ -1,0 +1,54 @@
+.contact{
+    margin: 20px auto;
+    padding: 35px;
+    width: 50vw;
+    height: 60vh;
+    background-color: rgb(43, 82, 73);
+    color: white;
+    margin-bottom: 10px;
+}
+input{
+    padding: 12px;
+    font-size: 19px;
+    font-weight: 400;
+    width: 30vw;
+
+}
+h1{
+    padding: 20px;
+    text-align: center;
+}
+label{
+    font-size: 20px;
+    font-weight: 400;
+}
+textarea{
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 35vw;
+}
+button{
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 12px;
+}
+.text-1{
+    display:flex;
+    gap: 15px;
+    flex-direction: column;
+    padding: 30px;
+}
+.text-2{
+    display:flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 5px;
+}
+.text-3{
+    padding: 10px 30px ;
+}
+.button{
+    padding: 30px;
+}
