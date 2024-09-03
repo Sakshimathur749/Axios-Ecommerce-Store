@@ -1,0 +1,46 @@
+.DisplayProduct {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.Product{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.left-side {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid black;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 21px;
+}
+.Card{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+.cardlist{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 15px;
+    border: 2px solid black;
+}
+.Producttitle{
+    padding: 10px 20px;
+}

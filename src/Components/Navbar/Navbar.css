@@ -5,13 +5,6 @@
     margin: auto;
     box-shadow: 0 2px 2px -1px grey;
 }
-li{
-    list-style: none;
-    cursor: pointer;
-}
-li:hover{
-    color: rgb(23, 178, 206)
-}
 .nav-logo {
     display: flex;
     align-items: center;
@@ -26,40 +19,25 @@ li:hover{
     align-items: center;
     text-decoration: none;
 }
-
-.nav-menu li {
+.nav-menu ul {
+    flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
 }
-
-
+li{
+    list-style: none;
+    cursor: pointer;
+}
 .nav-login-cart {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
-.nav-login-cart button {
-    padding: 10px 25px;
-    outline: none;
-    font-size: 20px;
-    font-weight: 500;
-    border: 1px solid #7a7a7a;
-    color: #515151;
-    background-color: white;
-    border-radius: 72px;
-}
-
-.nav-login-cart button:active {
-    background-color: #a9bdc2;
-}
-
 .nav-login-cart img {
     width: 33px;
 }
-
 .nav-cart-count {
     width: 22px;
     height: 22px;
