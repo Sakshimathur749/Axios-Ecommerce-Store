@@ -13,7 +13,7 @@ export const ProductContext = createContext<CardContextType | undefined>(undefin
 
 const ProductContextProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [cartItems, setCartItems] = useState<HomeProduct[]>([])
-  const addToCart = (product: HomeProduct) => {
+   const addToCart = (product: HomeProduct) => {
     const existingItem = cartItems.find(item => item.id === product.id);
     if (existingItem) {
       setCartItems(cartItems.map(item =>

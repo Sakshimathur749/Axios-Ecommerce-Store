@@ -9,5 +9,5 @@ export interface HomeProduct {
     quantity: number;
 }
 
-export type category = String
+export type category = string
 

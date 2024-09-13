@@ -16,7 +16,6 @@ const ProductDisplay = () => {
         const products = await getallProducts();
         const foundProduct = products?.find((p) => p.id === parseInt(productId || '0'));
         console.log(foundProduct,"Ska");
-
         setProduct(foundProduct || null);
       } catch (error) {
         console.error(error);

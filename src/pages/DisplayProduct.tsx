@@ -4,14 +4,14 @@ import { getallProducts, getallCategories } from 'src/services/serives';
 import { category, HomeProduct } from 'src/types/type';
 
 import { Link } from 'react-router-dom';
-import {ProductContext} from 'src/Context/ProductContext';
+import { ProductContext } from 'src/Context/ProductContext';
 
 const DisplayProduct = () => {
     const [allproduct, setAllproducts] = useState<HomeProduct[]>([]);
     const [categories, setCategories] = useState<category[]>([])
     const [filter, setFilter] = useState<HomeProduct[]>([]);
     const [selectedcategory, setSelectedcategory] = useState<string>('All');
-    const data= useContext(ProductContext);
+    const data = useContext(ProductContext);
 
     useEffect(() => {
         async function fetchdata() {
@@ -59,7 +59,7 @@ const DisplayProduct = () => {
                             <li
                                 key={i}
                                 className={`category ${selectedcategory === cat ? 'active' : ''}`}
-                                onClick={() => handleCategoryChange(cat.toString())}
+                                onClick={() => handleCategoryChange(cat)}
                             >
                                 {cat}
                             </li>
@@ -77,7 +77,7 @@ const DisplayProduct = () => {
                                     <div className="price"><p>${product.price}</p></div>
                                 </Link>
                                 <div className="btn">
-                                    <button onClick={()=>{data?.addToCart(product)}}>Add to Cart</button>
+                                    <button onClick={() => { data?.addToCart(product) }}>Add to Cart</button>
                                 </div>
                             </div>
                         )}
