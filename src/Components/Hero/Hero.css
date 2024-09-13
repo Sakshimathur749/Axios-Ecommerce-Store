@@ -17,6 +17,14 @@
     letter-spacing: 4px;
     gap: 5px;
 }
+.hero-left button{
+    padding: 22px;
+    margin: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    background-color: red;
+    border-radius: 20px;
+}
 
 .hero-left h1{
     padding: 2px;

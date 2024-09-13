@@ -5,10 +5,11 @@ const login = () => {
     return (
         <div className='login'>
             <div className='login-container'>
-                <h1>Login In</h1>
+                <h2>Login In</h2>
                 <div className='loginfield'>
-                    <span className="input-group-number">+91</span>
-                    <input type="tel" placeholder="" pattern="[789][0-9]{9}" />
+                    <input type="text"  placeholder='Enter Username'/>
+                    <input type="email" placeholder='Enter Email' />
+                    <input type="password" placeholder='password' />
                 </div>
                 <button>Send One Time Otp</button>
             <div><h2>Or</h2></div>

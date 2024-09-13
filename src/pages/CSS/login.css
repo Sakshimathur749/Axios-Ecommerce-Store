@@ -1,7 +1,7 @@
 .login{
         margin: auto;
         padding: 35px;
-        height: 80vh;
+        height: 90vh;
         background-color: rgb(43, 82, 73);
         margin-bottom: 10px;
 }
@@ -22,15 +22,25 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-weight: 400;
 }
+.login-container button{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: red;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 30px;
+}
 .loginfield{
-    padding: 20px;
+    padding: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
     justify-content: center;
 }
 .loginfield input {
-    padding: 22px;
+    padding: 20px;
     font-size: 17px;
     font-weight: 300;
     width: 400px;
@@ -39,18 +49,18 @@
     border: 2px solid rgb(209, 209, 209);
 }
 .loginfield span{
-    padding: 22px;
     font-size: 17px;
     font-weight: 300;
     width: 20px;
-    border: none;
+    outline: none;
     border-radius: 10px 0px 0px 10px;
     border: 2px solid rgb(209, 209, 209);
 }
-.other{
+.other {
     display: flex;
-    gap: 20px;
-    padding: 25px;
+}
+svg{
+    padding: 25px 10px;
 }
 span{
     font-size: 18px;

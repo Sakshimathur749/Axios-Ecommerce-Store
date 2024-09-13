@@ -2,17 +2,59 @@
     display: flex;
     flex-direction: column;
     gap: 13px;
+    width: 80vw;
 }
-.Product{
+
+.Product {
     display: flex;
     flex-direction: row;
     gap: 12px;
 }
-.left-side {
-    height: auto;
+.image1 img{
+    width:200px;
+    height:200px;
+    margin-top: 30px;
+    background-size: cover;
+}
+.Head {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:30px;
+    padding-left: 30px;
+    font-size: 20px;
+
+}
+.Head hr{
+    width: 200px;
+}
+
+.left-side {
+    width: 16vw;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
     border-right: 2px solid black;
+    padding: 30px;
+}
+
+.left-side h1 {
+    padding: 20px;
+    font-size: 30px;
+    font-style: italic;
+}
+.allCat{
+    display: flex;
+    flex-direction: column;
+
+}
+.category {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 19px;
 }
 
 .right-side {
@@ -21,9 +63,11 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 21px;
+    width: 67vw;
+    padding: 10px;
 }
-.Card{
+
+.Card {
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -31,16 +75,44 @@
     padding: 25px;
     flex-wrap: wrap;
 }
-.cardlist{
+
+.cardlist {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 450px;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 350px;
     padding: 15px;
     border: 2px solid black;
 }
-.Producttitle{
+
+.Producttitle {
     padding: 10px 20px;
+}
+.btn{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.btn button{
+    padding: 15px 20px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(103, 196, 168, 0.596);
+    border-radius: 20px;
+}
+.product-link{
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    padding: 15px;
+}
+Link{
+    text-decoration: none;
 }

@@ -6,12 +6,12 @@ import team2 from '../Asserts/team2img.jpg'
 const About = () => {
     return (
         <div className='about'>
-            <div className='heading'><h1>About</h1><hr /></div>
+            <div className='Heading'><h2>About</h2><hr /></div>
             <div className="quote">
                 An exclusive connection to Italian artisans for more meaningful buying.
                 Menswear and accessories crafted for you in numerous colours and refined materials
             </div>
-            <div className="content">
+            <div className="Content">
                 <div className="para1">
                     <h3>Who We Are</h3>
                     <span>

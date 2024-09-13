@@ -5,14 +5,9 @@ export interface HomeProduct {
     category: string;
     image: string;
     rating: number;
+    description: string;
+    quantity: number;
 }
-export interface Category{
-    category: string;
-    id:number;   
-    title: string;
-    price: number;
-}
-export interface Merged{
-    category:Category;
-    products: HomeProduct[];
-}
+
+export type category = String
+

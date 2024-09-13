@@ -1,7 +1,9 @@
 import './Items.css'
 import React, { useEffect, useState } from 'react';
-import { getfetchProducts } from 'src/serives/serives';
+import { getfetchProducts } from 'src/services/serives';
 import { HomeProduct } from 'src/types/type';
+import { Link } from 'react-router-dom';
+import ApiServices from 'src/services';
 
 
 const Items: React.FC = () => {
@@ -9,8 +11,7 @@ const Items: React.FC = () => {
   useEffect(() => {
     async function fetchdata() {
       try {
-        const products = await getfetchProducts();
-        console.log(products, "hey!");
+        const products = await ApiServices.fetchaAllProducts();
         products && setItem(products);
       } catch (error) {
         console.log(error);
@@ -20,17 +21,18 @@ const Items: React.FC = () => {
   }, [])
 
   return (
-    <div>
-      <h1 className='Head'>Top Products </h1>
+    <div className='item'>
+      <h1 className='Header'>Top Products </h1>
       <ul>
         {item?.map((product) =>
+            <Link to={`/product/${product.id}`} >
           <li className='card' key={product.id}>
             <div className="image1"><img src={product.image} width="200px" height="200px" alt="" /></div>
-            <div className="title"><h4>{product.title}</h4></div>
-            <div className="category"><h5>{product.category}</h5></div>
+            <div className="title"><h5>{product.title}</h5></div>
+            <div className="category"><p>{product.category}</p></div>
             <div className="price"><p>${product.price}</p></div>
-            <div className="button"><button>Add To cart</button></div>
           </li>
+          </Link>
         )}
       </ul>
     </div>

@@ -1,0 +1,34 @@
+.CardPage{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.image  {
+    padding: 30px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+h1{
+    padding: 10px;
+    width: 45vw;
+}
+span{
+    font-size: 17px;
+    font-weight: 400;
+    padding: 7px 15px ;
+}
+button{
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(255, 0, 0, 0.76);
+    margin: 30px;
+}

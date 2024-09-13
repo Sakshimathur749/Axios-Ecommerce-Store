@@ -6,7 +6,7 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     align-items: center;
 }
-.heading{
+.Heading{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,8 +15,9 @@
     padding: 14px;
     font-size: 21px;
     font-weight: 300;
+   font-style: italicq;
 }
-.heading hr{
+.Heading hr{
     width: 200px;
     display: flex;
     align-items: center;
@@ -29,7 +30,7 @@
     width: 750px;
     padding: 3px;
 }
-.content{
+.Content{
     display: flex;
     flex-direction: column;
     padding: 15px;

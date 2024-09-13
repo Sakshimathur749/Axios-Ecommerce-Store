@@ -1,0 +1,70 @@
+.contact{
+    display: flex;
+    padding: 10px 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+.head{
+    justify-self: center;
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+    font-style: italic;
+}
+.head hr{
+    width: 150px;
+}
+.left{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid rgba(105, 105, 105, 0.568);
+}
+.left button{
+    padding: 22px;
+    margin: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    background-color: red;
+    border-radius: 20px;
+}
+.contact-from h3,h4{
+    font-size: 24px;
+    font-weight: 400;
+}
+.contact-from{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.left input,textarea{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    font-size: 19px;
+    font-weight: 300;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
+    padding: 20px 30px;
+}
+.right p{
+    word-spacing: 10px;
+    padding: 12px;
+    font-size: 17px;
+    font-weight: 400;
+    width: 360px;
+}
+.svg{
+    display: flex;
+    gap: 20px;
+}

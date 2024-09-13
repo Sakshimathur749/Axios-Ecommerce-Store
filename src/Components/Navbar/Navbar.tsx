@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Navbar.css'
 import Logo from '../Asserts/logo.png'
-import Wishlist from '../Asserts/Wishlist.jpg'
 import UserAccount from '../Asserts/loginUser.png'
 import Carticon from '../Asserts/Cart_icon.png'
 import { Link } from 'react-router-dom'
+import { ProductContext } from 'src/Context/ProductContext'
 
 const Navbar = () => {
+  const data = useContext(ProductContext);
   return (
     <div className='Navbar'>
       <div className="nav-logo">
@@ -22,9 +23,8 @@ const Navbar = () => {
       </div>
       <div className="nav-login-cart">
         <Link to='/Account'><img src={UserAccount} alt="" /></Link>
-        <Link to='/Wishlist'><img src={Wishlist} alt="" height='44px' width="55px" /></Link>
-        <Link to='/'><img src={Carticon} alt="" /></Link>
-        <div className="nav-cart-count" >0</div>
+        <Link to='/cart'><img src={Carticon} alt="" /></Link>
+        <div className="nav-cart-count" >{data?.getTotalItem()}</div>
       </div>
     </div >
   )

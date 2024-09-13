@@ -7,7 +7,7 @@ const Hero = () => {
     <div className='hero'>
         <div className="hero-left">
             <h2>Trendy</h2>
-            <h1>Fashion</h1>
+            <h2>Fashion</h2>
             <p>Up To 50% off</p>
             <p>Don't miss the Deal</p>
             <hr />
